@@ -9,4 +9,9 @@ export default defineConfig({
     // eslint-disable-next-line no-undef
     alias: [{ find: "@", replacement: path.resolve(__dirname, "src") }],
   },
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true
+    }
+  },
 })
